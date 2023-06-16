@@ -1,0 +1,100 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.heading {
+  text-align: center;
+  &__h1 {
+    @include font-style (700, 80, 98);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  &__h2 {
+    @include font-style (700, 44, 54);
+    font-family: $second-font;
+    text-transform: capitalize;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blue;
+
+    &--color {
+      color: $white;
+
+      &::before {
+       background: $white;
+      }
+    }
+  }
+
+  &__h3 {
+    @include font-style (700, 22, 27);
+    text-transform: uppercase;
+    color: #2C4058;
+  }
+
+  &__subtitle {
+    @include font-style (400, 18, 22);
+    letter-spacing: 0.3em;
+  }
+}
+
+
+.nav__link {
+  @include font-style (400, 14, 18);
+  font-family: $nav-font;
+  text-transform: uppercase;
+}
+
+.project__card {
+  &--subtitle {
+    @include font-style (400, 22, 27);
+    text-transform: uppercase;
+    color: $blue;
+  }
+
+  &--text {
+    @include font-style (400, 18, 30);
+    color: $blue;
+  }
+}
+
+.project__card--btn {
+  @include font-style (400, 14, 17);
+  color: $black;
+  text-transform: uppercase;
+}
+
+.news {
+  &__text {
+    @include font-style (400, 18, 25);
+    color: $blue;
+    font-family: $second-font;
+  }
+
+  &__user--info-name {
+    @include font-style (400, 18, 22);
+    color: $blue;
+    text-transform: uppercase;
+  }
+
+  &__user--info-date {
+    @include font-style (400, 14, 17);
+    color: $light-blue;
+  }
+}
+
+.footer__copiright {
+  @include font-style (400, 14, 17);
+  color: $white;
+}
+
+.form__btn,
+input::placeholder {
+  @include font-style (400, 18, 27);
+  font-family: $main-font;
+  color: $black;  
+}
+
+.form__btn {
+  text-transform: uppercase;
+}

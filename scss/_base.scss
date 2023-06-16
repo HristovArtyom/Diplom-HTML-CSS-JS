@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container__footer {
+  max-width: 770px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container__slider {
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}

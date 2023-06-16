@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+@mixin flex-box ($direction: row, $justify: space-between, $align: initial, $gap ) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: #{$gap}px;
+}
+
+@mixin font-style ($weight: 400,$size:12px, $line-h: 18px, $color: $white) {
+  font-weight: $weight;
+  font-size: #{$size}px;
+  line-height: #{$line-h}px;
+  color: $color;
+}
