@@ -17,8 +17,6 @@
   background-image: linear-gradient(0deg, grey 0%, $light-blue 100%);
 }
 
-// header section
-
 .hero {   
    height: 800px;
 }
@@ -529,6 +527,7 @@
 
 .map {
   position: relative;
+  height: 700px;
 
   &__google {
     width: 100%;

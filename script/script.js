@@ -21,7 +21,7 @@ add('images/news2.png', 'EFFECTIVE ADVERTISING POINTERS.', 'Having a home based 
 add('images/news3.png', 'HYPNOTIZE YOURSELF INTO THE GHOST.', 'There are many things that are important to catalog design...', 'images/photo3.png', 'ALICE WARD', '30 Nov 2019');
 add('images/news1.png', 'SEE THE UNMATCHED BEAUTY OF THE GREAT.', '>Free directories: directories are perfect for customers that are searching for...', 'images/photo1.png', 'ALJA BRUN', '20 Jan 2020');
 
-render = () => {
+const render = () => {
   const cards = document.querySelector('.news__cards--wrapper');
   cards.innerHTML = '';
   for(const item of news) {
@@ -130,11 +130,11 @@ const swiperHero = new Swiper('.swiper__hero', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // autoplay: {
-  //   delay: 2000,
-  //   pauseOnMouseEnter: true,
-  //   stopOnLastSlide: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
+    stopOnLastSlide: false,
+  },
   slidesPerView: 1,
 });  
 

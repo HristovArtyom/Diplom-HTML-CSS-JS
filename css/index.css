@@ -1138,6 +1138,7 @@ iframe {
 }
 .map {
   position: relative;
+  height: 700px;
 }
 .map__google {
   width: 100%;
