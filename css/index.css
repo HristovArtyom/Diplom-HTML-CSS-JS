@@ -362,6 +362,7 @@ body {
   max-width: 770px;
   margin: 0 auto;
   position: relative;
+  padding: 0 10px;
 }
 
 .container__slider {
